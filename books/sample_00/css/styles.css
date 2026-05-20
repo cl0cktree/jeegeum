@@ -1,0 +1,88 @@
+/* 🍎 기본 리셋 및 기본 스타일 설정 */
+body {
+    font-family: 'Malgun Gothic', 'Nanum Gothic', sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 800px; /* 북 리더기 화면 폭 제한 */
+    margin: 0 auto; /* 중앙 정렬 */
+    background-color: #f9f9f9;
+}
+
+/* 🎨 카드 섹션 스타일 */
+.card {
+    background-color: #ffffff;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* 📢 버튼 공통 스타일 */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+/* 📘 메인 버튼 스타일 (기본 액션) */
+.primary-btn {
+    background-color: #007bff;
+    color: white;
+}
+.primary-btn:hover {
+    background-color: #0056b3;
+}
+
+/* 📗 보조 버튼 스타일 (리셋/돌아가기) */
+.secondary-btn {
+    background-color: #6c757d;
+    color: white;
+}
+.secondary-btn:hover {
+    background-color: #5a6268;
+}
+
+/* ======================================================== */
+/* 👆 [인터랙티브 기능 CSS] 탭 메뉴 스타일 */
+/* ======================================================== */
+
+.tab-buttons {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #555;
+    border-bottom: 3px solid transparent; /* 기본 밑줄 */
+    transition: border-bottom 0.3s;
+}
+
+/* 👆 현재 활성화된 탭 버튼 스타일 */
+.tab-btn.active-tab {
+    border-bottom: 3px solid #007bff; /* 강조된 파란색 밑줄 */
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* 👆 탭 콘텐츠 영역 숨김 및 보여주기 */
+.tab-pane {
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+    opacity: 1; /* 기본적으로 보이게 설정 */
+    transition: opacity 0.3s;
+}
+
+/* 👆 JavaScript가 숨김 처리를 할 때 사용되는 클래스 */
+.tab-pane[style*="display: none"] {
+    display: none;
+    opacity: 0;
+}

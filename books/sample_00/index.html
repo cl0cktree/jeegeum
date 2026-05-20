@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EPUB 3.0 인터랙티브 샘플북</title>
+        
+        <!-- 💡 [EPUB 핵심] 외부 CSS 파일을 연결합니다. -->
+        <link rel="stylesheet" href="css/styles.css">
+        
+        <!-- 💡 [EPUB 표준] EPUB 3.0은 접근성을 중요시하므로, 메타데이터와 관련 스크립트를 적절히 로드해야 합니다. -->
+        <!-- <link rel="opener" href="./manifest.xml"> 와 같은 방식이 사용될 수 있습니다. -->
+    </head>
+    <body>
+
+        <header>
+            <h1>디지털 독서 경험 샘플 북</h1>
+            <p>EPUB 3.0의 인터랙티브 요소를 체험해보세요!</p>
+        </header>
+
+        <main>
+            <!-- 🌟 인터랙티브 요소 컨테이너 (스크립트가 작동할 영역) -->
+            <section id="interactive-quiz" class="card">
+                <h2>📚 지식 테스트 (Quiz)</h2>
+                <p>아래 버튼을 클릭하여 숨겨진 내용을 확인하고 기능을 테스트하세요.</p>
+                
+                <button id="revealButton" class="btn primary-btn">정답 보기</button>
+                <div id="quizResult" style="margin-top: 15px; display: none;">
+                    <!-- 🧩 JavaScript가 여기에 동적으로 결과를 삽입합니다. -->
+                    <h3>✅ 결과:</h3>
+                    <p id="resultText"></p>
+                    <button id="restartButton" class="btn secondary-btn" style="display: none;">재시작</button>
+                </div>
+            </section>
+
+            <!-- 🌟 탭 인터랙션 테스트 요소 -->
+            <section class="card" style="margin-top: 30px;">
+                <h2>🌐 기능성 탭 네비게이션</h2>
+                <!-- 탭 버튼 그룹 -->
+                <div class="tab-buttons" role="tablist">
+                    <button class="tab-btn active-tab" data-tab="tab1" role="tab" aria-selected="true">기능 설명</button>
+                    <button class="tab-btn" data-tab="tab2" role="tab" aria-selected="false">사용자 가이드</button>
+                    <button class="tab-btn" data-tab="tab3" role="tab" aria-selected="false">참고 자료</button>
+                </div>
+                
+                <!-- 탭 콘텐츠 영역 -->
+                <div class="tab-content-area">
+                    <!-- 🧩 data-tab 값과 일치하는 ID를 가지며, 기본적으로만 표시됩니다. -->
+                    <div class="tab-pane active" id="tab1" role="tabpanel" aria-labelledby="tab1-button">
+                        <p>EPUB 3.0은 HTML5, CSS3, 그리고 JavaScript의 조합으로 높은 상호작용성을 제공합니다.</p>
+                        <ul>
+                            <li><strong>HTML5:</strong> 구조화된 콘텐츠 제공.</li>
+                            <li><strong>CSS3:</strong> 애니메이션 및 스타일링 담당.</li>
+                            <li><strong>JavaScript:</strong> 복잡한 이벤트 처리 및 동적 변화 담당.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" id="tab2" role="tabpanel" aria-labelledby="tab2-button" style="display: none;">
+                        <p>이 샘플 북은 북 리더기 환경에서도 안정적으로 작동하도록 구성되었습니다. (접근성 고려)</p>
+                        <p>버튼을 클릭하거나 탭하여 페이지 이동을 테스트해 보세요.</p>
+                    </div>
+                    <div class="tab-pane" id="tab3" role="tabpanel" aria-labelledby="tab3-button" style="display: none;">
+                        <p>더 많은 자료가 필요하시면 이 영역을 활용하여 외부 링크나 참고 섹션을 배치할 수 있습니다.</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Interactive EPUB Sample</p>
+        </footer>
+
+        <!-- 🚀 [JavaScript 연결] 스크립트를 body 끝에 연결하는 것이 성능상 가장 좋습니다. -->
+        <script src="js/script.js"></script>
+    </body>
+</html>

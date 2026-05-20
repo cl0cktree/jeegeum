@@ -1,0 +1,90 @@
+body {
+    font-family: "Malgun Gothic", sans-serif;
+    background-color: #f9f9f9;
+    color: #333333;
+    padding: 20px;
+    margin: 0;
+}
+
+/* 대화형 카드가 들어갈 컨테이너 설정 */
+.quiz-container {
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
+    margin: 30px auto;
+    perspective: 1000px; /* 3D 회전 효과를 위한 원근감 설정 */
+}
+
+/* 퀴즈 카드 기본 스타일 및 회전 애니메이션 준비 */
+.quiz-card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d; /* 자식 요소들의 3D 평면을 유지 */
+    transition: transform 0.6s ease; /* 회전할 때 부드럽게 넘어가도록 설정 */
+    cursor: pointer;
+}
+
+/* 자바스크립트로 'flipped' 클래스가 붙으면 카드를 180도 회전시킴 */
+.quiz-card.flipped {
+    transform: rotateY(180deg);
+}
+
+/* 카드의 앞면과 뒷면 공통 스타일 */
+.card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* 회전 시 뒷면을 보이지 않게 감춤 */
+    border-radius: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 카드 앞면 스타일 (질문) */
+.front {
+    background-color: #4a90e2;
+    color: #ffffff;
+}
+
+/* 카드 뒷면 스타일 (정답) - 처음에는 뒤집혀서 숨겨진 상태 */
+.back {
+    background-color: #2ecc71;
+    color: #ffffff;
+    transform: rotateY(180deg); /* 미리 180도 뒤집어 놓음 */
+}
+
+/* 힌트 및 설명 글자 스타일 */
+.hint {
+    font-size: 0.9em;
+    opacity: 0.8;
+    margin-top: 15px;
+}
+
+/* 버튼 영역 및 디자인 */
+.action-area {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #ffffff;
+    border: 2px solid #e0e0e0;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* 버튼 위에 마우스를 올렸을 때 효과 */
+.btn:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
