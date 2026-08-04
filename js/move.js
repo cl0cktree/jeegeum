@@ -616,7 +616,7 @@ $(function(){
 
 				}else{
 					$(this).children('.list-span-leftborder, .list-span-rightborder').stop().animate({'width':'50%'},100)
-					$(this).children('.list-span-leftborder, .list-span-rightborder').css({'border-bottom':'3px solid #000'})
+					$(this).children('.list-span-leftborder, .list-span-rightborder').css({'border-bottom':'3px solid #888'})
 				}
 		}else if (event.type=='mouseleave')
 		{
@@ -628,7 +628,7 @@ $(function(){
 
 				}else{
 					$(this).children('.list-span-leftborder, .list-span-rightborder').stop().animate({'width':'0%'},100)
-					$(this).children('.list-span-leftborder, .list-span-rightborder').css({'border-bottom':'3px solid #000'})
+					$(this).children('.list-span-leftborder, .list-span-rightborder').css({'border-bottom':'3px solid #888'})
 				}
 		}else if (event.type=='click')
 		{
@@ -1499,7 +1499,7 @@ $(function(){
 					$('#section1-article1-nav1').mouseover(function(){
 						$('#section1-article1-nav1').stop().css({'background':'#fff'})
 						$('.nav1-topmenu1-list a').css({'color':'#333'})
-						$('.list-span-leftborder,.list-span-rightborder').css('border-bottom','3px solid #000')
+						$('.list-span-leftborder,.list-span-rightborder').css('border-bottom','3px solid #888')
 						$('#phon-icon').css('background-position','-80px 0px')
 						$('#menu-icon').removeClass('scroll_on');
 					})
@@ -1523,7 +1523,7 @@ $(function(){
 						$('#section1-article1-nav1').mouseover(function(){
 							$('#section1-article1-nav1').stop().css({'background':'#fff'})
 							$('.nav1-topmenu1-list a').css({'color':'#333'})
-							$('.list-span-leftborder,.list-span-rightborder').css('border-bottom','3px solid #000')
+							$('.list-span-leftborder,.list-span-rightborder').css('border-bottom','3px solid #888')
 							$('#phon-icon img').attr('src',portfolioindex_url+'/images/ｐ_icon.png')
 							$('#menu-icon img').attr('src',portfolioindex_url+'/images/m_icon.png')
 						})
@@ -1539,7 +1539,7 @@ $(function(){
 					}else{
 						$('#section1-article1-nav1').stop().css({'background':'rgba(255,255,255,1)'})
 						$('.nav1-topmenu1-list a').css({'color':'#333'})
-						$('.list-span-leftborder,.list-span-rightborder').css('border-bottom','3px solid #000')
+						$('.list-span-leftborder,.list-span-rightborder').css('border-bottom','3px solid #888')
 						$('.top-btn').css({'opacity':'0','z-index':'-1'})
 						$('.index-btn-wrap').css({'z-index':'-2','opacity':'0','height':'0px'})
 						$('#phon-icon img').attr('src',portfolioindex_url+'/images/ｐ_icon.png')
@@ -1548,13 +1548,13 @@ $(function(){
 						$('#section1-article1-nav1').mouseover(function(){
 							$('#section1-article1-nav1').stop().css({'background':'rgba(255,255,255,1)'})
 							$('.nav1-topmenu1-list a').css({'color':'#333'})
-							$('.list-span-leftborder,.list-span-rightborder').css('border-bottom','3px solid #000')
+							$('.list-span-leftborder,.list-span-rightborder').css('border-bottom','3px solid #888')
 		
 						})
 						$('#section1-article1-nav1').mouseleave(function(){
 							$('#section1-article1-nav1').stop().css({'background':'rgba(255,255,255,1)'})
 							$('.nav1-topmenu1-list a').css({'color':'#333'})
-							$('.list-span-leftborder,.list-span-rightborder').css('border-bottom','3px solid #000')
+							$('.list-span-leftborder,.list-span-rightborder').css('border-bottom','3px solid #888')
 		
 						})
 		
@@ -1644,12 +1644,12 @@ $(function(){
 					$('#section1-article1-nav1').mouseover(function(){
 						$('#section1-article1-nav1').stop().css({'background':'rgba(255,255,255,1)'})
 						$('.nav1-topmenu1-list a').css({'color':'#333'})
-						$('.list-span-leftborder,.list-span-rightborder').css('border-bottom','3px solid #000')
+						$('.list-span-leftborder,.list-span-rightborder').css('border-bottom','3px solid #888')
 					})
 					$('#section1-article1-nav1').mouseleave(function(){
 						$('#section1-article1-nav1').stop().css({'background':'rgba(255,255,255,1)'})
 						$('.nav1-topmenu1-list a').css({'color':'#333'})
-						$('.list-span-leftborder,.list-span-rightborder').css('border-bottom','3px solid #000')
+						$('.list-span-leftborder,.list-span-rightborder').css('border-bottom','3px solid #888')
 						$('#phon-icon').css('background-position','-80px 0px')
 						$('#menu-icon').removeClass('scroll_on');
 					})
