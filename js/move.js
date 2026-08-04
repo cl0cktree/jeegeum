@@ -64,6 +64,9 @@ $(function(){
 		}else if((this_url=='http://www.clocktree.co.kr/')||(this_url=='http://www.clocktree.co.kr/index.html')||(this_url=='http://www.clocktree.co.kr/sub/sub1.html')||(this_url=='http://www.clocktree.co.kr/sub/sub2.html')||(this_url=='http://www.clocktree.co.kr/sub/sub3.html')||(this_url=='http://www.clocktree.co.kr/sub/sub4.html')||(this_url=='http://www.clocktree.co.kr/sub/sub5.html')){
 			portfolioindex_url = 'http://www.clocktree.co.kr'
 			console.log('type_12 = '+portfolioindex_url);
+		}else if((this_url=='https://www.jeegeum.com/')||(this_url=='https://www.jeegeum.com/index.html')||(this_url=='https://www.jeegeum.com/sub/sub1.html')||(this_url=='https://www.jeegeum.com/sub/sub2.html')||(this_url=='https://www.jeegeum.com/sub/sub3.html')||(this_url=='https://www.jeegeum.com/sub/sub4.html')||(this_url=='https://www.jeegeum.com/sub/sub5.html')){
+			portfolioindex_url = 'https://www.jeegeum.com'
+			console.log('type_12 = '+portfolioindex_url);
 		};
 		jsonCover_data=portfolioindex_url+'/data/cover_data.json';
 		jsonHeader_data=portfolioindex_url+'/data/header_data.json';
