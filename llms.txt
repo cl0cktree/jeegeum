@@ -1,4 +1,4 @@
-# Lee Hyunsup Portfolio (clocktree.co.kr)
+# 도서출판 지금보다의 홍보용 홈페이지 (https://www.jeegeum.com/)
 
 > 이 사이트는 웹 퍼블리셔 및 개발자 이현섭(Lee Hyunsup)의 개인 작업물 모음집(포트폴리오)입니다. 2016년부터 제작한 다양한 웹 퍼블리싱 및 목업(Mockup) 작업들이 순차적으로 기록되어 있으며, 제작자의 기술적 성장 과정을 확인할 수 있습니다.
 
