@@ -1,7 +1,7 @@
 [
     {"nav_section":"header","nav_kinds":"gnb","nav_title":"지금보다","nav_img":"","nav_alt":"출판소 소개 페이지로 이동","nav_url":"/sub/sub1.html","nav_num":"1"},
     {"nav_section":"header","nav_kinds":"gnb","nav_title":"서적소개","nav_img":"","nav_alt":"서적 소개 페이지로 이동","nav_url":"/sub/sub2.html","nav_num":"2"},
-    {"nav_section":"header","nav_kinds":"gnb","nav_title":"작가소개","nav_img":"","nav_alt":"작가 소개 페이지로 이동","nav_url":"/sub/sub3.html","nav_num":"3"},
+    {"nav_section":"header","nav_kinds":"gnb","nav_title":"ebooks","nav_img":"","nav_alt":"작가 소개 페이지로 이동","nav_url":"/sub/sub3.html","nav_num":"3"},
     {"nav_section":"header","nav_kinds":"gnb","nav_title":"공지사항","nav_img":"","nav_alt":"공지사항 페이지로 이동","nav_url":"/sub/sub4.html","nav_num":"4"},
     {"nav_section":"header","nav_kinds":"gnb","nav_title":"홍보행사","nav_img":"","nav_alt":"이벤트 페이지로 이동","nav_url":"/sub/sub5.html","nav_num":"5"}
 ]
