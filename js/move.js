@@ -1202,8 +1202,8 @@ $(function(){
 			var conbox_contentswrap = document.getElementById('all-filter-conbox');
 			var filter_conbox_contentswrap = document.getElementById('filter-conbox-contentswrap');
 
-			$('.body-section-content, header, footer').find('[tabindex]').attr('tabindex','-1','aria-hidden','true');
-			$('#all-filter-conbox').find('[tabindex]').attr('tabindex','0','aria-hidden','false');
+			$('.body-section-content, header, footer').find('[tabindex]').attr({'tabindex':'-1','aria-hidden':'true'});
+			$('#all-filter-conbox').find('[tabindex]').attr({'tabindex':'0','aria-hidden':'false'});
 			$('#all-filter-conbox').find('[tabindex]').eq(0).focus();
 			
 			conbox_contentswrap.addEventListener('keydown', function(e){
@@ -1285,8 +1285,8 @@ $(function(){
 			var filter_landing_contents = document.getElementById('click-all-filter-landing');
 			console.log('landing focus on!');
 
-			$('.body-section-content, header, footer').find('[tabindex]').attr('tabindex','-1','aria-hidden','true');
-			$('#click-all-filter-landing').find('[tabindex]').attr('tabindex','0','aria-hidden','false');
+			$('.body-section-content, header, footer').find('[tabindex]').attr({'tabindex':'-1','aria-hidden':'true'});
+			$('#click-all-filter-landing').find('[tabindex]').attr({'tabindex':'0','aria-hidden':'false'});
 			$('#click-all-filter-landing').find('[tabindex]').eq(0).focus();
 
 			filter_landing_contents.addEventListener('keydown', function(e){
@@ -1314,8 +1314,8 @@ $(function(){
 	};
 
 	function focus_still(){ // 낮은 단계의 레이어 선택 요소에 포커스 유지
-		$('#all-filter-conbox').find('[tabindex]').attr('tabindex','-1','aria-hidden','false');
-		$('.body-section-content, header, footer').find('[tabindex]').attr('tabindex','0','aria-hidden','true');
+		$('#all-filter-conbox').find('[tabindex]').attr({'tabindex':'-1','aria-hidden':'true'});
+		$('.body-section-content, header, footer').find('[tabindex]').attr({'tabindex':'0','aria-hidden':'false'});
 		$('.filter-title-closebtn').click();
 		console.log('$layer_sel = '+$layer_sel);
 		$layer_sel.focus();
@@ -2054,9 +2054,9 @@ $(function(){
 			$('#click-all-filter-landing').css({'z-index':'-10','opacity':'0'})
 			// $('.move-wrap1').animate({'opacity':'1'},300)
 			$('.move-wrap1').addClass('on');
-			$('#click-all-filter-landing').find('[tabindex]').attr('tabindex','-1','aria-hidden','true');
+			$('#click-all-filter-landing').find('[tabindex]').attr({'tabindex':'-1','aria-hidden':'true'});
 			$body.css({'overflow-y':''});
-			$('.body-section-content, header, footer').find('[tabindex]').attr('tabindex','0','aria-hidden','false');
+			$('.body-section-content, header, footer').find('[tabindex]').attr({'tabindex':'0','aria-hidden':'false'});
 			stop_clock();
 		}
 	});
