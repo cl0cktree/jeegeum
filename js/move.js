@@ -140,7 +140,7 @@ $(function(){
 			$.getJSON(jsonCover_data, function(data){
 				$.each(data, function(I, item){
 					if(item.cover_kinds=='header'){
-						nav1_toplogo.innerHTML='<h1><a href="'+portfolioindex_url+item.cover_url+'" tabindex="0"><img src="'+portfolioindex_url+item.cover_img+'" alt="'+item.cover_alt+'"></a></h1>';
+						nav1_toplogo.innerHTML='<h1><a href="'+portfolioindex_url+item.cover_url+'" tabindex="0" aria-hidden="false"><img src="'+portfolioindex_url+item.cover_img+'" alt="'+item.cover_alt+'"></a></h1>';
 					};
 				});
 				if ($('#article1-nav1-topmenu1').css('display')=='block')
@@ -1202,8 +1202,8 @@ $(function(){
 			var conbox_contentswrap = document.getElementById('all-filter-conbox');
 			var filter_conbox_contentswrap = document.getElementById('filter-conbox-contentswrap');
 
-			$('.body-section-content, header, footer').find('[tabindex]').attr('tabindex','-1');
-			$('#all-filter-conbox').find('[tabindex]').attr('tabindex','0');
+			$('.body-section-content, header, footer').find('[tabindex]').attr('tabindex','-1','aria-hidden','true');
+			$('#all-filter-conbox').find('[tabindex]').attr('tabindex','0','aria-hidden','false');
 			$('#all-filter-conbox').find('[tabindex]').eq(0).focus();
 			
 			conbox_contentswrap.addEventListener('keydown', function(e){
@@ -1285,8 +1285,8 @@ $(function(){
 			var filter_landing_contents = document.getElementById('click-all-filter-landing');
 			console.log('landing focus on!');
 
-			$('.body-section-content, header, footer').find('[tabindex]').attr('tabindex','-1');
-			$('#click-all-filter-landing').find('[tabindex]').attr('tabindex','0');
+			$('.body-section-content, header, footer').find('[tabindex]').attr('tabindex','-1','aria-hidden','true');
+			$('#click-all-filter-landing').find('[tabindex]').attr('tabindex','0','aria-hidden','false');
 			$('#click-all-filter-landing').find('[tabindex]').eq(0).focus();
 
 			filter_landing_contents.addEventListener('keydown', function(e){
@@ -1314,8 +1314,8 @@ $(function(){
 	};
 
 	function focus_still(){ // 낮은 단계의 레이어 선택 요소에 포커스 유지
-		$('#all-filter-conbox').find('[tabindex]').attr('tabindex','-1');
-		$('.body-section-content, header, footer').find('[tabindex]').attr('tabindex','0');
+		$('#all-filter-conbox').find('[tabindex]').attr('tabindex','-1','aria-hidden','false');
+		$('.body-section-content, header, footer').find('[tabindex]').attr('tabindex','0','aria-hidden','true');
 		$('.filter-title-closebtn').click();
 		console.log('$layer_sel = '+$layer_sel);
 		$layer_sel.focus();
@@ -1822,7 +1822,7 @@ $(function(){
 			$body.css({'overflow-y':'hidden'});
 			// body_tag.style.overflowY='hidden'; 위와 같은 내용.
 			var datasum;
-			$('.scrollall-con-box').attr({'tabindex':'-1'});
+			$('.scrollall-con-box').attr({'tabindex':'-1','aria-hidden':'true'});
 			if ((this==document.getElementById('con-box1-imgborder1'))||(this==document.getElementById('con-box1-caption1'))||(this==document.getElementById('scroll1-con-box1')))
 			{
 				datasum = portfolioindex_url+'/data/data.html #filter-conbox-contents1';
@@ -2008,7 +2008,7 @@ $(function(){
 			$('#click-all-filter-index').html('');
 			$('.click-all-filter').fadeOut('fast');
 			$('#click-all-filter-index').html('<div class="filter-loader-loadingbox"><div class="loader-loadingbox-spin"><div class="loadingbox-spin-inaroundf"></div></div></div>');
-			$('.scrollall-con-box').attr({'tabindex':'0'});
+			$('.scrollall-con-box').attr({'tabindex':'0','aria-hidden':'false'});
 			$layer_sel.focus();
 		}
 		// else if ((event.type=='keydown')&&((event.keyCode||event.which)===9)||(event.shiftKey&&(event.keyCode||event.which)===9)){
@@ -2054,9 +2054,9 @@ $(function(){
 			$('#click-all-filter-landing').css({'z-index':'-10','opacity':'0'})
 			// $('.move-wrap1').animate({'opacity':'1'},300)
 			$('.move-wrap1').addClass('on');
-			$('#click-all-filter-landing').find('[tabindex]').attr('tabindex','-1');
+			$('#click-all-filter-landing').find('[tabindex]').attr('tabindex','-1','aria-hidden','true');
 			$body.css({'overflow-y':''});
-			$('.body-section-content, header, footer').find('[tabindex]').attr('tabindex','0');
+			$('.body-section-content, header, footer').find('[tabindex]').attr('tabindex','0','aria-hidden','false');
 			stop_clock();
 		}
 	});
