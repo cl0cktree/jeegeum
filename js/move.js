@@ -2009,6 +2009,7 @@ $(function(){
 			$('.click-all-filter').fadeOut('fast');
 			$('#click-all-filter-index').html('<div class="filter-loader-loadingbox"><div class="loader-loadingbox-spin"><div class="loadingbox-spin-inaroundf"></div></div></div>');
 			$('.scrollall-con-box').attr({'tabindex':'0','aria-hidden':'false'});
+            $('.body-section-content, header, footer').find('[tabindex]').attr({'tabindex':'0','aria-hidden':'false'});
 			$layer_sel.focus();
 		}
 		// else if ((event.type=='keydown')&&((event.keyCode||event.which)===9)||(event.shiftKey&&(event.keyCode||event.which)===9)){
