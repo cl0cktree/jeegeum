@@ -250,7 +250,7 @@ $(function(){
 			$('#topmenu1-list-span'+nav_num_start).css({'border-bottom':'3px solid #bbb'})
 			$('.topmenu1-list-span').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'0px'})
 			$('#topmenu1-list-span'+nav_num_start).children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'-3px','border-bottom':'3px solid #bbb'})
-			$('#list-ul-li'+nav_num_start).css({'border':'3px solid #999'})
+			$('#list-ul-li'+nav_num_start).css({'border-bottom':'3px solid rgb(153,153,153,0.5)'})
 		}
 	}
 	/*--nav click시 동작 함수--*/
@@ -266,7 +266,7 @@ $(function(){
 				$('.topmenu1-list-span').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'0px'})
 				$('#topmenu1-list-span'+nav_num).children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'-3px','border-bottom':'3px solid #bbb'})
 				$('.ul-li-img1').css({'border':'0px solid #999'})
-				$('#list-ul-li'+nav_num).css({'border':'3px solid #999'})
+				$('#list-ul-li'+nav_num).css({'border-bottom':'3px solid rgb(153,153,153,0.5)'})
 				if(nav_num!==1){
 					$('#slide-wrap').css({'display':'block'})
 					$('#slide-wrap-i').css({'display':'none'})
@@ -306,7 +306,7 @@ $(function(){
 			$('.topmenu1-list-span').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'0px'})
 			$('#topmenu1-list-span'+nav_num).children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'-3px','border-bottom':'3px solid #bbb'})
 			$('.ul-li-img1').css({'border':'0px solid #999'})
-			$('#list-ul-li'+nav_num).css({'border':'3px solid #999'})
+			$('#list-ul-li'+nav_num).css({'border-bottom':'3px solid rgb(153,153,153,0.5)'})
 			if(nav_num!==1){
 				$('#slide-wrap').css({'display':'block'})
 				$('#slide-wrap-i').css({'display':'none'})
@@ -736,12 +736,12 @@ $(function(){
 		if (event.type=='mouseover')
 		{
 			//$(this).animate({'width':'65%','margin':'17.5%','margin-top':'12px'},50)
-			$('.ul-li-img1').css({'border-radius':'12px'})
-			$(this).stop().css({'border-radius':'25px'})
+			// $('.ul-li-img1').css({'border-radius':'12px'})
+			// $(this).stop().css({'border-radius':'25px'})
 		}else if (event.type=='mouseleave')
 		{
 			//$(this).animate({'width':'80%','margin':'10%','margin-top':'10px'},50)
-			$(this).stop().css({'border-radius':'12px'})
+			// $(this).stop().css({'border-radius':'12px'})
 		}else if (event.type=='click')
 		{
 			if (this==document.getElementById('list-ul-li1'))
@@ -1390,7 +1390,7 @@ $(function(){
 				$('.topmenu1-list-span').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'0px'})
 				$('#topmenu1-list-span1').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'-3px','border-bottom':'3px solid #bbb'})
 				$('.ul-li-img1').css({'border':'0px solid #999'})
-				$('#list-ul-li1').css({'border':'3px solid #999'})
+				$('#list-ul-li1').css({'border-bottom':'3px solid rgb(153,153,153,0.5)'})
 				$('#slide-wrap').css({'display':'none'})
 				$('#slide-wrap-i').css({'display':'block'})
 				introSommon();
@@ -1400,7 +1400,7 @@ $(function(){
 				$('.topmenu1-list-span').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'0px'})
 				$('#topmenu1-list-span2').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'-3px','border-bottom':'3px solid #bbb'})
 				$('.ul-li-img1').css({'border':'0px solid #999'})
-				$('#list-ul-li2').css({'border':'3px solid #999'})
+				$('#list-ul-li2').css({'border-bottom':'3px solid rgb(153,153,153,0.5)'})
 				$('#slide-wrap').css({'display':'block'})
 				$('#slide-wrap-i').css({'display':'none'})
 				// webSommon();
@@ -1411,7 +1411,7 @@ $(function(){
 				$('.topmenu1-list-span').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'0px'})
 				$('#topmenu1-list-span3').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'-3px','border-bottom':'3px solid #bbb'})
 				$('.ul-li-img1').css({'border':'0px solid #999'})
-				$('#list-ul-li3').css({'border':'3px solid #999'})
+				$('#list-ul-li3').css({'border-bottom':'3px solid rgb(153,153,153,0.5)'})
 				$('#slide-wrap').css({'display':'block'})
 				$('#slide-wrap-i').css({'display':'none'})
 				// movieSommon();
@@ -1422,7 +1422,7 @@ $(function(){
 				$('.topmenu1-list-span').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'0px'})
 				$('#topmenu1-list-span4').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'-3px','border-bottom':'3px solid #bbb'})
 				$('.ul-li-img1').css({'border':'0px solid #999'})
-				$('#list-ul-li4').css({'border':'3px solid #999'})
+				$('#list-ul-li4').css({'border-bottom':'3px solid rgb(153,153,153,0.5)'})
 				$('#slide-wrap').css({'display':'block'})
 				$('#slide-wrap-i').css({'display':'none'})
 				// flashSommon();
@@ -1433,7 +1433,7 @@ $(function(){
 				$('.topmenu1-list-span').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'0px'})
 				$('#topmenu1-list-span5').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'-3px','border-bottom':'3px solid #bbb'})
 				$('.ul-li-img1').css({'border':'0px solid #999'})
-				$('#list-ul-li5').css({'border':'3px solid #999'})
+				$('#list-ul-li5').css({'border-bottom':'3px solid rgb(153,153,153,0.5)'})
 				$('#slide-wrap').css({'display':'block'})
 				$('#slide-wrap-i').css({'display':'none'})
 				new PageSummon('랜더링및편집작업페이지 콘텐츠 묶음','<h2>2D랜더링&편집작업</h2>','image');
