@@ -293,7 +293,9 @@ $(function(){
 				$('#scrollall-back-acc2').stop().animate({'top':'170px'},100)
 
 				$('.body-filter-preloader').hide();
+                console.log('sub of else up = '+portfolioindex_url+'/sub/sub'+nav_num+'.html');
 				history.pushState(null,null,portfolioindex_url+'/sub/sub'+nav_num+'.html');
+                console.log('sub of else = '+portfolioindex_url+'/sub/sub'+nav_num+'.html');
 			}else{
 				location.href=portfolioindex_url+'/sub/sub'+nav_num+'.html'
 
@@ -333,7 +335,9 @@ $(function(){
 			$('#scrollall-back-acc2').stop().animate({'top':'170px'},100)
 
 			$('.body-filter-preloader').hide();
+            console.log('sub of else down = '+portfolioindex_url+'/sub/sub'+nav_num+'.html');
 			history.pushState(null,null,portfolioindex_url+'/sub/sub'+nav_num+'.html');
+            console.log('sub of else = '+portfolioindex_url+'/sub/sub'+nav_num+'.html');
 		}
 
 	}
@@ -731,7 +735,7 @@ $(function(){
 	/*------------------------------------------------------------------*/
 
     	/*햄버거 메뉴 클릭시 bottom:0에 앱형태 ui의 네비 생성 및 네비동작*/
-	$('header').on('click mouseover mouseleave','a',function(event){
+	$('header').on('click mouseover mouseleave','list-ul-li a',function(event){
 		var agent = navigator.userAgent.toLowerCase();
 		$(document).on('click history','.list-ul-li a',function(event){
 			event.preventDefault();//a tag 동작제어 - 바로 링크되지 못하도록 방지
