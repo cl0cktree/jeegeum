@@ -534,6 +534,7 @@ $(function(){
 
 				$('.body-filter-preloader').hide();
 				history.pushState(null,null,portfolioindex_url+'/index.html');
+                 console.log('in of else = '+portfolioindex_url);
 				title_changer();
 				$('.move-wrap1').addClass('on');
 			}else{
@@ -568,6 +569,7 @@ $(function(){
 
 			$('.body-filter-preloader').hide();
 			history.pushState(null,null,portfolioindex_url+'/index.html');
+            console.log('out of else = '+portfolioindex_url);
 			title_changer();
 			$('.move-wrap1').addClass('on');
 		}
