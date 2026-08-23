@@ -679,7 +679,56 @@ $(function(){
 	})
 	/*--------------------------------------------------------*/
 	/*햄버거 메뉴 클릭시 bottom:0에 앱형태 ui의 네비 생성 및 네비동작*/
-	$('footer').on('click mouseover mouseleave','a',function(event){
+	// $('footer').on('click mouseover mouseleave','a',function(event){
+	// 	var agent = navigator.userAgent.toLowerCase();
+	// 	$(document).on('click history','.list-ul-li a',function(event){
+	// 		event.preventDefault();//a tag 동작제어 - 바로 링크되지 못하도록 방지
+	// 	})
+	// 	if (event.type=='mouseover')
+	// 	{
+	// 		//$(this).animate({'width':'65%','margin':'17.5%','margin-top':'12px'},50)
+	// 		$('.ul-li-img1').css({'border-radius':'12px'})
+	// 		$(this).stop().css({'border-radius':'25px'})
+	// 	}else if (event.type=='mouseleave')
+	// 	{
+	// 		//$(this).animate({'width':'80%','margin':'10%','margin-top':'10px'},50)
+	// 		$(this).stop().css({'border-radius':'12px'})
+	// 	}else if (event.type=='click')
+	// 	{
+	// 		if (this==document.getElementById('list-ul-li1'))
+	// 		{
+	// 			nav_num = 1;
+	// 			introSommon();
+	// 		}else if (this==document.getElementById('list-ul-li2'))
+	// 		{
+	// 			nav_num = 2;
+	// 			// webSommon();
+	// 			new PageSummon('웹작업페이지 콘텐츠 묶음','<h2>웹&앱 퍼블리싱</h2>','web');
+	// 		}else if (this==document.getElementById('list-ul-li3'))
+	// 		{
+	// 			nav_num = 3;
+	// 			// movieSommon();
+	// 			new PageSummon('동영상작업페이지 콘텐츠 묶음','<h2>동영상 편집작업</h2>','movie');
+	// 		}else if (this==document.getElementById('list-ul-li4'))
+	// 		{
+	// 			nav_num = 4;
+	// 			// flashSommon();
+	// 			new PageSummon('플래시작업페이지 콘텐츠 묶음','<h2>플래시</h2>','flash');
+	// 		}else if (this==document.getElementById('list-ul-li5'))
+	// 		{
+	// 			nav_num = 5;
+	// 			// imageSommon();
+	// 			new PageSummon('랜더링및편집작업페이지 콘텐츠 묶음','<h2>2D랜더링&편집작업</h2>','image');
+	// 		}
+	// 		title_changer();
+	// 		nav_move();
+	// 		$('.move-wrap1').addClass('on');
+	// 	}
+	// })
+	/*------------------------------------------------------------------*/
+
+    	/*햄버거 메뉴 클릭시 bottom:0에 앱형태 ui의 네비 생성 및 네비동작*/
+	$('header').on('click mouseover mouseleave','a',function(event){
 		var agent = navigator.userAgent.toLowerCase();
 		$(document).on('click history','.list-ul-li a',function(event){
 			event.preventDefault();//a tag 동작제어 - 바로 링크되지 못하도록 방지
