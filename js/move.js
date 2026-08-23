@@ -735,7 +735,7 @@ $(function(){
 	/*------------------------------------------------------------------*/
 
     	/*햄버거 메뉴 클릭시 bottom:0에 앱형태 ui의 네비 생성 및 네비동작*/
-	$('header').on('click mouseover mouseleave','list-ul-li a',function(event){
+	$('header').on('click mouseover mouseleave','.list-ul-li a',function(event){
 		var agent = navigator.userAgent.toLowerCase();
 		$(document).on('click history','.list-ul-li a',function(event){
 			event.preventDefault();//a tag 동작제어 - 바로 링크되지 못하도록 방지
