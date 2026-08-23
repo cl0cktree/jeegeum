@@ -568,6 +568,7 @@ $(function(){
 			$('#scrollall-back-acc2').stop().animate({'top':'170px'},100)
 
 			$('.body-filter-preloader').hide();
+            console.log('out of else up = '+portfolioindex_url+'/index.html');
 			history.pushState(null,null,portfolioindex_url+'/index.html');
             console.log('out of else = '+portfolioindex_url+'/index.html');
 			title_changer();
