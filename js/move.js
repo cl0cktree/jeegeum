@@ -745,10 +745,14 @@ $(function(){
 			//$(this).animate({'width':'65%','margin':'17.5%','margin-top':'12px'},50)
 			// $('.ul-li-img1').css({'border-radius':'12px'})
 			// $(this).stop().css({'border-radius':'25px'})
+            $(this).animate({'border-bottom':'3px solid darkgreen'})
+            $(this).children('span').css({'font-weight':'600'})
 		}else if (event.type=='mouseleave')
 		{
 			//$(this).animate({'width':'80%','margin':'10%','margin-top':'10px'},50)
 			// $(this).stop().css({'border-radius':'12px'})
+            $(this).animate({'border-bottom':'0px solid darkgreen'})
+            $(this).children('span').css({'font-weight':'400'})
 		}else if (event.type=='click')
 		{
 			if (this==document.getElementById('list-ul-li1'))

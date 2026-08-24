@@ -315,7 +315,7 @@ textarea{box-sizing:border-box;}
 */
 
 .body-all-header .section-num1-article .nav1-side-menu .side-menu-listwrap .menu-list-ul li>a span{display:block;line-height:50px;}
-.body-all-header .section-num1-article .nav1-side-menu .side-menu-listwrap .menu-list-ul li>a:hover span{border-bottom:3px solid #888;}
+.body-all-header .section-num1-article .nav1-side-menu .side-menu-listwrap .menu-list-ul li>a:hover span{border-bottom:3px solid #888;transition:all 0.2s;}
 
 .body-section-content{width:100%;background:rgba(255,255,255,0.9);}
 .body-section-content .section-heading{display:none;}
